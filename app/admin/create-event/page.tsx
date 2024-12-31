@@ -19,7 +19,7 @@ export default function CreateEventPage() {
   const [image, setImage] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
-  const { toast } = useToast()
+  const toast = useToast()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
